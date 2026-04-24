@@ -16,7 +16,6 @@ void LCD_Command(u8 cmd)
 {
     GPIO_SetPinValue(GPIO_PORTC, LCD_RS, GPIO_LOW);
 
-    // ?? RW ????? ?????????:
     GPIO_SetPinValue(GPIO_PORTC, LCD_RW, GPIO_LOW);
 
     GPIO_SetPortValue(GPIO_PORTB, cmd);
